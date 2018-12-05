@@ -111,6 +111,17 @@ def problem2a(circle, rectangle, window):
     #    DIFFICULTY:      6
     #    TIME ESTIMATE:   10 to 15 minutes.
     # -------------------------------------------------------------------------
+    circle.attach_to(window)
+    rectangle.attach_to(window)
+    window.render()
+    window.continue_on_mouse_click()
+
+    circle.attach_to(window)
+    rectangle.attach_to(window)
+    line = rg.Line(rectangle.get_upper_right_corner(), rectangle.get_lower_left_corner())
+    line.arrow = 'last'
+    line.attach_to(window)
+    window.render()
 
 def run_test_problem2b():
     """ Tests the  problem2b   function. """
