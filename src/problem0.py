@@ -345,6 +345,7 @@ def problem0c(circle, n, window):
     #   renders with a half-second pause after rendering.
     ###########################################################################
     # -------------------------------------------------------------------------
+    circle.attach_to(window)
     for k in range(n):
         center_x = circle.center.x + 2*circle.radius
         center = rg.Point(center_x, circle.center.y)
